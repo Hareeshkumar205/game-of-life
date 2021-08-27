@@ -16,3 +16,4 @@ target
 .DS_Store
 final deployment testing
 testing with chef
+deployment in two servers
