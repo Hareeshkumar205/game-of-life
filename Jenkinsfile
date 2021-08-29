@@ -34,5 +34,8 @@ pipeline {
             steps {
                 //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                     sh 'scp /var/lib/jenkins/workspace/pipeline-demo-job/gameoflife-web/target/gameoflife.war root@ip-172-31-44-1:/opt/tomcat/apache-tomcat-9.0.52/webapps'
+                    sh 'mvn deploy'
+            }
         }
     }
+}
